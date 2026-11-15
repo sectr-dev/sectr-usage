@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sectr-telemetry",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  // Served only at telemetry.sectr.dev, by a route that lives outside this
+  // file. No workers.dev address and no preview addresses.
+  "workers_dev": false,
+  "preview_urls": false,
+  // No logs of any kind: a request log would hold the sender's IP address.
+  "observability": { "enabled": false }
+}

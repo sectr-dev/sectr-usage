@@ -1,0 +1,14 @@
+{
+  "name": "sectr-usage",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "tsc --noEmit && vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.12",
+    "wrangler": "^4.162.0"
+  }
+}
